@@ -1,0 +1,1026 @@
+2018-05-15 14:46:05 [INFO] [org.springframework.boot.StartupInfoLogger:48] - Starting springBootApplication on SC-201803231400 with PID 10932 (E:\workspace\springBoot\target\classes started by Administrator in E:\workspace\springBoot) 
+2018-05-15 14:46:05 [INFO] [org.springframework.boot.SpringApplication:637] - No active profile set, falling back to default profiles: default 
+2018-05-15 14:46:06 [INFO] [org.springframework.context.support.AbstractApplicationContext:582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 14:46:06 CST 2018]; root of context hierarchy 
+2018-05-15 14:46:07 [INFO] [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.4.Final 
+2018-05-15 14:46:08 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-05-15 14:46:09 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b9262f74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 14:46:10 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5741df1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 14:46:10 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] - Tomcat initialized with port(s): 21000 (http) 
+2018-05-15 14:46:11 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting service Tomcat 
+2018-05-15 14:46:11 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2018-05-15 14:46:11 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring embedded WebApplicationContext 
+2018-05-15 14:46:11 [INFO] [org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] - Root WebApplicationContext: initialization completed in 4894 ms 
+2018-05-15 14:46:11 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean:190] - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-05-15 14:46:11 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-05-15 14:46:11 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-05-15 14:46:11 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-05-15 14:46:11 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-05-15 14:46:12 [WARN] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$2:440] - Autowired annotation is not supported on static fields: private static org.slf4j.Logger com.spring.springboot.service.listener.KafkaConsumerListener.log 
+2018-05-15 14:46:12 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'dealUserDataExecutor' 
+2018-05-15 14:46:12 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'filterUsersetExecutor' 
+2018-05-15 14:46:12 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'queryHbaseExecutor' 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 14:46:06 CST 2018]; root of context hierarchy 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/kafkaTest/kafka]}" onto public void com.spring.springboot.controller.KafkaTestController.kafka() 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/thread]}" onto public void com.spring.springboot.controller.MultithreadingController.thread() throws java.lang.Exception 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/multithreadingAsyn]}" onto public void com.spring.springboot.controller.MultithreadingController.multithreadingAsyn() throws java.lang.Exception 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/log]}" onto public void com.spring.springboot.controller.TestConfigController.log() 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/query]}" onto public java.lang.String com.spring.springboot.controller.TestConfigController.query(java.lang.String) 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/getConfig]}" onto public void com.spring.springboot.controller.TestConfigController.getConfig() 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 14:46:13 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 14:46:15 [INFO] [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup 
+2018-05-15 14:46:15 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] - Starting beans in phase 0 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 14:46:15 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:260] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing 
+2018-05-15 14:46:15 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing ProtocolHandler ["http-nio-21000"] 
+2018-05-15 14:46:15 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 14:46:15 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 14:46:15 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting ProtocolHandler [http-nio-21000] 
+2018-05-15 14:46:15 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Using a shared selector for servlet write/read 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:15 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:15 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:15 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] - Tomcat started on port(s): 21000 (http) 
+2018-05-15 14:46:15 [INFO] [org.springframework.boot.StartupInfoLogger:57] - Started springBootApplication in 11.281 seconds (JVM running for 12.289) 
+2018-05-15 14:46:20 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:20 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:20 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:25 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:25 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:25 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:30 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:30 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:30 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:46:31 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-2] 
+2018-05-15 14:46:31 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-0] 
+2018-05-15 14:46:31 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-1] 
+2018-05-15 14:55:26 [INFO] [org.springframework.boot.StartupInfoLogger:48] - Starting springBootApplication on SC-201803231400 with PID 8240 (E:\workspace\springBoot\target\classes started by Administrator in E:\workspace\springBoot) 
+2018-05-15 14:55:26 [INFO] [org.springframework.boot.SpringApplication:637] - No active profile set, falling back to default profiles: default 
+2018-05-15 14:55:26 [INFO] [org.springframework.context.support.AbstractApplicationContext:582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 14:55:26 CST 2018]; root of context hierarchy 
+2018-05-15 14:55:27 [INFO] [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.4.Final 
+2018-05-15 14:55:28 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-05-15 14:55:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c68a3221] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 14:55:29 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f2d8209e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] - Tomcat initialized with port(s): 21000 (http) 
+2018-05-15 14:55:30 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting service Tomcat 
+2018-05-15 14:55:30 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2018-05-15 14:55:30 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring embedded WebApplicationContext 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] - Root WebApplicationContext: initialization completed in 3985 ms 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean:190] - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-05-15 14:55:30 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-05-15 14:55:31 [WARN] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$2:440] - Autowired annotation is not supported on static fields: private static org.slf4j.Logger com.spring.springboot.service.listener.KafkaConsumerListener.log 
+2018-05-15 14:55:31 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'dealUserDataExecutor' 
+2018-05-15 14:55:31 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'filterUsersetExecutor' 
+2018-05-15 14:55:31 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'queryHbaseExecutor' 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 14:55:26 CST 2018]; root of context hierarchy 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/kafkaTest/kafka]}" onto public void com.spring.springboot.controller.KafkaTestController.kafka() 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/thread]}" onto public void com.spring.springboot.controller.MultithreadingController.thread() throws java.lang.Exception 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/multithreadingAsyn]}" onto public void com.spring.springboot.controller.MultithreadingController.multithreadingAsyn() throws java.lang.Exception 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/log]}" onto public void com.spring.springboot.controller.TestConfigController.log() 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/query]}" onto public java.lang.String com.spring.springboot.controller.TestConfigController.query(java.lang.String) 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/getConfig]}" onto public void com.spring.springboot.controller.TestConfigController.getConfig() 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 14:55:32 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 14:55:33 [INFO] [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup 
+2018-05-15 14:55:33 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] - Starting beans in phase 0 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 14:55:33 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 14:55:33 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:260] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing 
+2018-05-15 14:55:34 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing ProtocolHandler ["http-nio-21000"] 
+2018-05-15 14:55:34 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting ProtocolHandler [http-nio-21000] 
+2018-05-15 14:55:34 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 14:55:34 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Using a shared selector for servlet write/read 
+2018-05-15 14:55:34 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] - Tomcat started on port(s): 21000 (http) 
+2018-05-15 14:55:34 [INFO] [org.springframework.boot.StartupInfoLogger:57] - Started springBootApplication in 8.527 seconds (JVM running for 9.208) 
+2018-05-15 14:55:34 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 14:55:34 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 14:55:48 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:48 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:48 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:53 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:53 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:53 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:58 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:58 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:55:58 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:03 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:03 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:03 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:08 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:08 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:08 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 14:56:11 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-0] 
+2018-05-15 14:56:11 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-2] 
+2018-05-15 14:56:11 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-1] 
+2018-05-15 14:57:40 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-05-15 14:57:40 [INFO] [org.springframework.web.servlet.FrameworkServlet:489] - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-05-15 14:57:40 [INFO] [org.springframework.web.servlet.FrameworkServlet:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms 
+2018-05-15 17:19:43 [INFO] [org.springframework.boot.StartupInfoLogger:48] - Starting springBootApplication on SC-201803231400 with PID 8164 (E:\workspace\springBoot\target\classes started by Administrator in E:\workspace\springBoot) 
+2018-05-15 17:19:43 [INFO] [org.springframework.boot.SpringApplication:637] - No active profile set, falling back to default profiles: default 
+2018-05-15 17:19:43 [INFO] [org.springframework.context.support.AbstractApplicationContext:582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 17:19:43 CST 2018]; root of context hierarchy 
+2018-05-15 17:19:43 [INFO] [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.4.Final 
+2018-05-15 17:19:44 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-05-15 17:19:45 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$60258e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 17:19:45 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c737d0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 17:19:46 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] - Tomcat initialized with port(s): 21000 (http) 
+2018-05-15 17:19:46 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting service Tomcat 
+2018-05-15 17:19:46 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2018-05-15 17:19:46 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring embedded WebApplicationContext 
+2018-05-15 17:19:46 [INFO] [org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] - Root WebApplicationContext: initialization completed in 3569 ms 
+2018-05-15 17:19:47 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean:190] - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-05-15 17:19:47 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-05-15 17:19:47 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-05-15 17:19:47 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-05-15 17:19:47 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-05-15 17:19:48 [WARN] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$2:440] - Autowired annotation is not supported on static fields: private static org.slf4j.Logger com.spring.springboot.service.listener.KafkaConsumerListener.log 
+2018-05-15 17:19:48 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'dealUserDataExecutor' 
+2018-05-15 17:19:48 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'filterUsersetExecutor' 
+2018-05-15 17:19:48 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'queryHbaseExecutor' 
+2018-05-15 17:19:48 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 17:19:43 CST 2018]; root of context hierarchy 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/kafkaTest/kafka]}" onto public void com.spring.springboot.controller.KafkaTestController.kafka() 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/thread]}" onto public void com.spring.springboot.controller.MultithreadingController.thread() throws java.lang.Exception 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/multithreadingAsyn]}" onto public void com.spring.springboot.controller.MultithreadingController.multithreadingAsyn() throws java.lang.Exception 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/test]}" onto public void com.spring.springboot.controller.Test1.test() 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/log]}" onto public void com.spring.springboot.controller.TestConfigController.log() 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/query]}" onto public java.lang.String com.spring.springboot.controller.TestConfigController.query(java.lang.String) 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/getConfig]}" onto public void com.spring.springboot.controller.TestConfigController.getConfig() 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 17:19:49 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 17:19:50 [INFO] [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup 
+2018-05-15 17:19:50 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] - Starting beans in phase 0 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 17:19:50 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:260] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing 
+2018-05-15 17:19:50 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing ProtocolHandler ["http-nio-21000"] 
+2018-05-15 17:19:50 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 17:19:50 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 17:19:50 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 17:19:50 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting ProtocolHandler [http-nio-21000] 
+2018-05-15 17:19:50 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 17:19:50 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Using a shared selector for servlet write/read 
+2018-05-15 17:19:50 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] - Tomcat started on port(s): 21000 (http) 
+2018-05-15 17:19:50 [INFO] [org.springframework.boot.StartupInfoLogger:57] - Started springBootApplication in 8.701 seconds (JVM running for 9.368) 
+2018-05-15 17:19:50 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-0] 
+2018-05-15 17:19:50 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-1] 
+2018-05-15 17:19:50 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-2] 
+2018-05-15 17:20:33 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-05-15 17:20:33 [INFO] [org.springframework.web.servlet.FrameworkServlet:489] - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-05-15 17:20:33 [INFO] [org.springframework.web.servlet.FrameworkServlet:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 86 ms 
+2018-05-15 20:59:51 [INFO] [org.springframework.boot.StartupInfoLogger:48] - Starting springBootApplication on SC-201803231400 with PID 11468 (E:\workspace\springBoot\target\classes started by Administrator in E:\workspace\springBoot) 
+2018-05-15 20:59:51 [INFO] [org.springframework.boot.SpringApplication:637] - No active profile set, falling back to default profiles: default 
+2018-05-15 20:59:51 [INFO] [org.springframework.context.support.AbstractApplicationContext:582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 20:59:51 CST 2018]; root of context hierarchy 
+2018-05-15 20:59:52 [INFO] [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.4.Final 
+2018-05-15 20:59:53 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-05-15 20:59:54 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1e6eeca6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 20:59:54 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4abcdb23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 20:59:55 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] - Tomcat initialized with port(s): 21000 (http) 
+2018-05-15 20:59:55 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting service Tomcat 
+2018-05-15 20:59:55 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2018-05-15 20:59:56 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring embedded WebApplicationContext 
+2018-05-15 20:59:56 [INFO] [org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] - Root WebApplicationContext: initialization completed in 4459 ms 
+2018-05-15 20:59:56 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean:190] - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-05-15 20:59:56 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-05-15 20:59:56 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-05-15 20:59:56 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-05-15 20:59:56 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-05-15 20:59:57 [WARN] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$2:440] - Autowired annotation is not supported on static fields: private static org.slf4j.Logger com.spring.springboot.service.listener.KafkaConsumerListener.log 
+2018-05-15 20:59:57 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'dealUserDataExecutor' 
+2018-05-15 20:59:57 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'filterUsersetExecutor' 
+2018-05-15 20:59:57 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'queryHbaseExecutor' 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 20:59:51 CST 2018]; root of context hierarchy 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/kafkaTest/kafka]}" onto public void com.spring.springboot.controller.KafkaTestController.kafka() 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/thread]}" onto public void com.spring.springboot.controller.MultithreadingController.thread() throws java.lang.Exception 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/multithreadingAsyn]}" onto public void com.spring.springboot.controller.MultithreadingController.multithreadingAsyn() throws java.lang.Exception 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/test]}" onto public void com.spring.springboot.controller.Test.test() 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/log]}" onto public void com.spring.springboot.controller.TestConfigController.log() 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/query]}" onto public java.lang.String com.spring.springboot.controller.TestConfigController.query(java.lang.String) 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/getConfig]}" onto public void com.spring.springboot.controller.TestConfigController.getConfig() 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 20:59:58 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 20:59:59 [INFO] [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup 
+2018-05-15 21:00:00 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] - Starting beans in phase 0 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 21:00:00 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:260] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing 
+2018-05-15 21:00:00 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing ProtocolHandler ["http-nio-21000"] 
+2018-05-15 21:00:00 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting ProtocolHandler [http-nio-21000] 
+2018-05-15 21:00:00 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Using a shared selector for servlet write/read 
+2018-05-15 21:00:00 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 21:00:00 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 21:00:00 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] - Tomcat started on port(s): 21000 (http) 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 21:00:00 [INFO] [org.springframework.boot.StartupInfoLogger:57] - Started springBootApplication in 9.968 seconds (JVM running for 10.716) 
+2018-05-15 21:00:00 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 21:00:00 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 21:00:00 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-0] 
+2018-05-15 21:00:00 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-2] 
+2018-05-15 21:00:00 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-1] 
+2018-05-15 21:04:49 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-05-15 21:04:49 [INFO] [org.springframework.web.servlet.FrameworkServlet:489] - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-05-15 21:04:49 [INFO] [org.springframework.web.servlet.FrameworkServlet:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms 
+2018-05-15 21:05:01 [INFO] [com.spring.springboot.controller.Test:14] - 成功 
+2018-05-15 21:09:00 [INFO] [com.spring.springboot.controller.Test:14] - 成功 
+2018-05-15 21:10:41 [INFO] [com.spring.springboot.controller.Test:14] - 成功 
+2018-05-15 21:10:47 [INFO] [com.spring.springboot.controller.Test:14] - 成功 
+2018-05-15 21:10:52 [INFO] [com.spring.springboot.controller.Test:14] - 成功 
+2018-05-15 21:16:07 [INFO] [org.springframework.boot.StartupInfoLogger:48] - Starting springBootApplication on SC-201803231400 with PID 8240 (E:\workspace\springBoot\target\classes started by Administrator in E:\workspace\springBoot) 
+2018-05-15 21:16:07 [INFO] [org.springframework.boot.SpringApplication:637] - No active profile set, falling back to default profiles: default 
+2018-05-15 21:16:08 [INFO] [org.springframework.context.support.AbstractApplicationContext:582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 21:16:08 CST 2018]; root of context hierarchy 
+2018-05-15 21:16:08 [INFO] [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.4.Final 
+2018-05-15 21:16:10 [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:165] - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-05-15 21:16:11 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$58f949cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 21:16:11 [INFO] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8547384c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-05-15 21:16:12 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] - Tomcat initialized with port(s): 21000 (http) 
+2018-05-15 21:16:12 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting service Tomcat 
+2018-05-15 21:16:12 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2018-05-15 21:16:12 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring embedded WebApplicationContext 
+2018-05-15 21:16:12 [INFO] [org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] - Root WebApplicationContext: initialization completed in 4809 ms 
+2018-05-15 21:16:13 [INFO] [org.springframework.boot.web.servlet.ServletRegistrationBean:190] - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-05-15 21:16:13 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-05-15 21:16:13 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-05-15 21:16:13 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-05-15 21:16:13 [INFO] [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-05-15 21:16:14 [WARN] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$2:440] - Autowired annotation is not supported on static fields: private static org.slf4j.Logger com.spring.springboot.service.listener.KafkaConsumerListener.log 
+2018-05-15 21:16:14 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'dealUserDataExecutor' 
+2018-05-15 21:16:14 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'filterUsersetExecutor' 
+2018-05-15 21:16:14 [INFO] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:165] - Initializing ExecutorService  'queryHbaseExecutor' 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ef888f6: startup date [Tue May 15 21:16:08 CST 2018]; root of context hierarchy 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/kafkaTest/kafka]}" onto public void com.spring.springboot.controller.KafkaTestController.kafka() 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/thread]}" onto public void com.spring.springboot.controller.MultithreadingController.thread() throws java.lang.Exception 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/multithreading/multithreadingAsyn]}" onto public void com.spring.springboot.controller.MultithreadingController.multithreadingAsyn() throws java.lang.Exception 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/aa/test]}" onto public void com.spring.springboot.controller.Test.test() 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/log]}" onto public void com.spring.springboot.controller.TestConfigController.log() 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/query]}" onto public java.lang.String com.spring.springboot.controller.TestConfigController.query(java.lang.String) 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/testConfig/getConfig]}" onto public void com.spring.springboot.controller.TestConfigController.getConfig() 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 21:16:15 [INFO] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-05-15 21:16:16 [INFO] [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup 
+2018-05-15 21:16:16 [INFO] [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] - Starting beans in phase 0 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.config.AbstractConfig:165] - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = mygroupiduserset
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [192.168.1.101:9092, 192.168.1.103:9092, 192.168.1.104:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+ 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:82] - Kafka version : 0.9.0.1 
+2018-05-15 21:16:16 [INFO] [org.apache.kafka.common.utils.AppInfoParser$AppInfo:83] - Kafka commitId : 23c69d62a0cabf06 
+2018-05-15 21:16:16 [INFO] [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:260] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing 
+2018-05-15 21:16:16 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing ProtocolHandler ["http-nio-21000"] 
+2018-05-15 21:16:16 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Starting ProtocolHandler [http-nio-21000] 
+2018-05-15 21:16:16 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Using a shared selector for servlet write/read 
+2018-05-15 21:16:17 [INFO] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] - Tomcat started on port(s): 21000 (http) 
+2018-05-15 21:16:17 [INFO] [org.springframework.boot.StartupInfoLogger:57] - Started springBootApplication in 9.851 seconds (JVM running for 10.58) 
+2018-05-15 21:16:17 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 21:16:17 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 21:16:17 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:244] - partitions revoked:[] 
+2018-05-15 21:16:17 [INFO] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupRequestHandler:431] - SyncGroup for group mygroupiduserset failed due to coordinator rebalance, rejoining the group 
+2018-05-15 21:16:17 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-2] 
+2018-05-15 21:16:17 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-1] 
+2018-05-15 21:16:17 [INFO] [org.springframework.kafka.listener.AbstractMessageListenerContainer$2:249] - partitions assigned:[springBootKafka-0] 
+2018-05-15 21:16:49 [INFO] [org.apache.juli.logging.DirectJDKLog:179] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-05-15 21:16:49 [INFO] [org.springframework.web.servlet.FrameworkServlet:489] - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-05-15 21:16:49 [INFO] [org.springframework.web.servlet.FrameworkServlet:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms 
+2018-05-15 21:16:49 [INFO] [com.spring.springboot.controller.Test:15] - 成功 
+2018-05-15 21:17:18 [INFO] [com.spring.springboot.controller.Test:15] - 成功 
+2018-05-15 21:18:03 [INFO] [com.spring.springboot.controller.Test:15] - 成功 
+2018-05-15 21:18:12 [INFO] [com.spring.springboot.controller.Test:15] - 成功 

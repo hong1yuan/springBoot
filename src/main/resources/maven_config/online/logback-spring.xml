@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+	<property name="LOG_HOME" value="logs/" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] [%class:%line] - %m %n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 输出到文件  按天切割成压缩包   yyyy-MM-dd-hh-->
+	<appender name="FILE-OUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/springboot.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<!-- 按时间切分成压缩包  yyyyMMddHH 到每小时     yyyy-MM-dd按天切分 - 只是格式不是必要的 -->
+			<fileNamePattern>${LOG_HOME}/springboot-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<maxFileSize>300MB</maxFileSize>
+			<!-- 60 days -->
+			<maxHistory>60</maxHistory>
+			<!--文件达到 最大4G时会被压缩和切割 -->
+			<totalSizeCap>20GB</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] [%class:%line] - %m %n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="springBootDiy" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/springBootDiy.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        	<!-- 按时间切分成压缩包  yyyyMMddHH 到每小时 -->
+            <FileNamePattern>${LOG_HOME}/${HOSTNAME}-springBootDiy.log.%d{yyyyMMdd}.%i.log.gz</FileNamePattern>
+            
+            <!-- 每个文件应该最多为4G，保存60天的历史，最多20GB。 -->
+            <!-- 60 days -->
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!--文件达到 最大4G时会被压缩和切割 -->
+                <!-- <maxFileSize>4096 MB</maxFileSize> -->
+                <maxFileSize>4096 MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE-OUT" />
+	</root>
+	<!-- 将日志输出到文件中 -->
+	<logger name="springBootDiy" additivity="false"> 
+        <appender-ref ref="springBootDiy"/>
+    </logger>
+    
+	<!-- 配置mybatis打印sql -->
+	<!-- <logger name="com.spring.springboot.mapper" level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </logger> -->
+    
+</configuration>
