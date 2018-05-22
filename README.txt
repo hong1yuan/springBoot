@@ -29,7 +29,6 @@ GET 	/metrics/{name} 	查看具体指标
 POST 	/shutdown 	关闭应用（要真正生效，得配置文件开启endpoints.shutdown.enabled: true）
 GET 	/trace 	查看基本追踪信息
 
-增加spring-boot-starter-web pom  监控会用上WEB功能  不过相关JAR包其他的POM中应该包含了 已验证去掉没影响 不过也加上了~
 
 打包 
 右键工程（或者右键pom文件）--> run As-->maven build 输入命令  clean install -P online（或者clean package -P online）(install是安装 package是打包  -P online是只把online的配置文件打包)
