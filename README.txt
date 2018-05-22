@@ -11,6 +11,8 @@ AES加密
 多线程
 启动停止脚步
 
+增加spring-boot-starter-actuator监控POM 增加mysql version为8.0
+
 打包 
 右键工程（或者右键pom文件）--> run As-->maven build 输入命令  clean install -P online（或者clean package -P online）(install是安装 package是打包  -P online是只把online的配置文件打包)
 
