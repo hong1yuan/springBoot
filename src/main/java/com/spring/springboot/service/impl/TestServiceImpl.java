@@ -14,8 +14,8 @@ public class TestServiceImpl implements TestService {
 	private TestMapper testMapper;
 
 	@Override
-	public List<Map<String, Object>> query(String appid) {
-		return testMapper.query(appid);
+	public List<Map<String, Object>> query(String id) {
+		return testMapper.query(id);
 	}
 
 }
