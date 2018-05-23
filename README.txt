@@ -12,6 +12,23 @@ AES加密
 启动停止脚步
 
 增加spring-boot-starter-actuator监控POM 增加mysql version为8.0
+配置文件增加监控配置 端口：30000等
+已查明之前监控不好用是因为接口安全未关闭导致 之后会加入接口安全security相关功能
+以下是相关路径
+GET 	/autoconfig 	查看自动配置的使用情况
+GET 	/configprops 	查看配置属性，包括默认配置
+GET 	/beans 	查看bean及其关系列表
+GET 	/dump 	打印线程栈
+GET 	/env 	查看所有环境变量
+GET 	/env/{name} 	查看具体变量值
+GET 	/health 	查看应用健康指标
+GET 	/info 	查看应用信息（需要自己在application.properties里头添加信息，比如info.contact.email=easonjim@163.com）
+GET 	/mappings 	查看所有url映射
+GET 	/metrics 	查看应用基本指标
+GET 	/metrics/{name} 	查看具体指标
+POST 	/shutdown 	关闭应用（要真正生效，得配置文件开启endpoints.shutdown.enabled: true）
+GET 	/trace 	查看基本追踪信息
+
 
 打包 
 右键工程（或者右键pom文件）--> run As-->maven build 输入命令  clean install -P online（或者clean package -P online）(install是安装 package是打包  -P online是只把online的配置文件打包)
