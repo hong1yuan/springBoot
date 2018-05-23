@@ -6,9 +6,9 @@
 		select
 			*
 		from
-			t_app_info
+			t_test
 		where
-			 appid= #{appid}
+			 id= #{id}
 	</select>
 	
 </mapper>

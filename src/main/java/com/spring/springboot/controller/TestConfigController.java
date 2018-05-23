@@ -34,10 +34,10 @@ public class TestConfigController {
 	}
 	
 	//查询语句
-	//http://127.0.0.1:21000/testConfig/query?appid=cmcc1
+	//http://127.0.0.1:21000/testConfig/query?id=1
 	@RequestMapping(value = "/query")
-	public String query(@RequestParam("appid") String appid){
-		List<Map<String, Object>> query = testService.query(appid);
+	public String query(@RequestParam("id") String id){
+		List<Map<String, Object>> query = testService.query(id);
 		String jsonString = JSON.toJSONString(query);
 		return jsonString;
 	}

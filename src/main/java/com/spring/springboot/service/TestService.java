@@ -5,6 +5,6 @@ import java.util.Map;
 
 public interface TestService {
 	
-	List<Map<String, Object>> query(String appid);
+	List<Map<String, Object>> query(String id);
 
 }
