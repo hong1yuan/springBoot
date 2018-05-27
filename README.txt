@@ -29,6 +29,8 @@ GET 	/metrics/{name} 	查看具体指标
 POST 	/shutdown 	关闭应用（要真正生效，得配置文件开启endpoints.shutdown.enabled: true）
 GET 	/trace 	查看基本追踪信息
 
+JDBC连接 批量插入数据
+
 
 打包 
 右键工程（或者右键pom文件）--> run As-->maven build 输入命令  clean install -P online（或者clean package -P online）(install是安装 package是打包  -P online是只把online的配置文件打包)

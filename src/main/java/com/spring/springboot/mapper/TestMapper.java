@@ -11,6 +11,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TestMapper {
 	
-	List<Map<String, Object>> query(String id);
+	List<Map<String, Object>> query(String id) throws Exception;
+
+	void add(Map<String,Object> param) throws Exception;
 
 }
