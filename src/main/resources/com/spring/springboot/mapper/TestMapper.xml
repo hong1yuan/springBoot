@@ -10,5 +10,10 @@
 		where
 			 id= #{id}
 	</select>
+
+	<insert id="add" parameterType="map">
+		insert into t_test(name,age)
+		values (#{name},#{age})
+	</insert>
 	
 </mapper>

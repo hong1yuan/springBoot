@@ -3,6 +3,7 @@ package com.spring.springboot.service.impl;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.executor.ExecutorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +15,12 @@ public class TestServiceImpl implements TestService {
 	private TestMapper testMapper;
 
 	@Override
-	public List<Map<String, Object>> query(String id) {
+	public List<Map<String, Object>> query(String id) throws Exception{
 		return testMapper.query(id);
+	}
+
+	public void add(Map<String,Object> param)throws Exception{
+		 testMapper.add(param);
 	}
 
 }
