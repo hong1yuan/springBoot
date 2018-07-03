@@ -12,6 +12,7 @@ AES加密
 启动停止脚步
 拦截器
 rpc
+文件图片上传
 
 增加spring-boot-starter-actuator监控POM 增加mysql version为8.0
 配置文件增加监控配置 端口：30000等
