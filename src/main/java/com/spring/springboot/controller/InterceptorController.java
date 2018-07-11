@@ -23,6 +23,7 @@ public class InterceptorController {
     /**
      * interceptor请求被拦截
      * 拦截类  URLInterceptor MyWebAppConfigurer
+     * http://127.0.0.1:21000/interceptor/interceptorRequest?aa=js&bb=2&cc=3
      */
     @RequestMapping(value = "/interceptorRequest")
     public String  interceptor(){
