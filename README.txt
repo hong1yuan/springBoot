@@ -15,6 +15,9 @@ rpc
 文件图片上传
 Jasypt加密
 @SpringBootTest注解进行单元测试
+java队列
+版本比较
+ajax登录
 
 增加spring-boot-starter-actuator监控POM 增加mysql version为8.0
 配置文件增加监控配置 端口：30000等
