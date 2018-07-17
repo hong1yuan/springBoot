@@ -97,6 +97,12 @@
             <artifactId>jasypt-spring-boot-starter</artifactId>
             <version>1.8</version><!-- 改成自己本地的jdk版本-->
         </dependency>
+        <!-- 热部署依赖 start -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <profiles>
