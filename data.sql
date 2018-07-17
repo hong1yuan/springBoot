@@ -30,3 +30,15 @@ CREATE TABLE `t_test` (
 -- Records of t_test
 -- ----------------------------
 INSERT INTO `t_test` VALUES ('1', '张三', '26');
+
+
+CREATE TABLE `t_user` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `username` varchar(10) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `age` varchar(10) DEFAULT NULL,
+  `remark` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `t_user` VALUES (1, 'admin', '123456', '20', '管理员账号');

@@ -7,8 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 
-@Mapper
-@Repository
 public interface TestMapper {
 	
 	List<Map<String, Object>> query(String id) throws Exception;
