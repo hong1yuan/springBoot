@@ -19,6 +19,8 @@ java队列
 版本比较
 ajax登录
 热部署
+扫描dao层 有@MapperScan(注解则不需要在mapper接口中写@Mapper注解（启动类中写@MapperScan和mapper接口中写@Mapper注解存在一个就行）
+http停止服务（http://127.0.0.1:30000/shutdown）
 
 增加spring-boot-starter-actuator监控POM 增加mysql version为8.0
 配置文件增加监控配置 端口：30000等
