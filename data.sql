@@ -42,3 +42,12 @@ CREATE TABLE `t_user` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 INSERT INTO `t_user` VALUES (1, 'admin', '123456', '20', '管理员账号');
+
+CREATE TABLE `t_timing_task` (
+  `id` varchar(10) NOT NULL DEFAULT '',
+  `time` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+INSERT INTO `t_timing_task` VALUES ('1', '0/10 * * * * *');
+

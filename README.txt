@@ -4,6 +4,7 @@ hbase
 redis
 kafka
 定时任务
+动态定时任务
 Md5加密
 AES加密
 多线程随机写数据
